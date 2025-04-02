@@ -2,11 +2,25 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Anshul Portfolio Website</title>
-    <link>https://adanshul.github.io/anshul-dhull.github.io/</link>
+    <link>http://localhost:1313/anshul-dhull.github.io/</link>
     <description>Recent content on Anshul Portfolio Website</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate></lastBuildDate>
-    <atom:link href="https://adanshul.github.io/anshul-dhull.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 02 Apr 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/anshul-dhull.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About Me</title>
+      <link>http://localhost:1313/anshul-dhull.github.io/about/</link>
+      <pubDate>Wed, 02 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/anshul-dhull.github.io/about/</guid>
+      <description>&lt;p&gt;I’m Anshul, a [your profession] with experience in [your skills]&amp;hellip;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>About Me</title>
+      <link>http://localhost:1313/anshul-dhull.github.io/experience/</link>
+      <pubDate>Wed, 02 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/anshul-dhull.github.io/experience/</guid>
+      <description>&lt;p&gt;company = &amp;ldquo;IBM&amp;rdquo;&#xA;role = &amp;ldquo;Security Analyst&amp;rdquo;&#xA;period = &amp;ldquo;Sep 2020 - Aug 2022&amp;rdquo;&#xA;logo = &amp;ldquo;/images/company/logo.png&amp;rdquo;&#xA;description = &amp;ldquo;Brief description of your role and responsibilities.&amp;rdquo;&#xA;responsibilities = [&#xA;&amp;ldquo;Responsibility 1 with specific achievements&amp;rdquo;,&#xA;&amp;ldquo;Responsibility 2 with specific achievements&amp;rdquo;,&#xA;&amp;ldquo;Responsibility 3 with specific achievements&amp;rdquo;&#xA;]&lt;/p&gt;</description>
+    </item>
   </channel>
 </rss>
