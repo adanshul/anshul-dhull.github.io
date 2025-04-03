@@ -16,11 +16,11 @@
       <description>&lt;p&gt;I’m Anshul, a [your profession] with experience in [your skills]&amp;hellip;&lt;/p&gt;</description>
     </item>
     <item>
-      <title>About Me</title>
+      <title></title>
       <link>https://adanshul.github.io/anshul-dhull.github.io/experience/</link>
-      <pubDate>Wed, 02 Apr 2025 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://adanshul.github.io/anshul-dhull.github.io/experience/</guid>
-      <description>&lt;p&gt;company = &amp;ldquo;IBM&amp;rdquo;&#xA;role = &amp;ldquo;Security Analyst&amp;rdquo;&#xA;period = &amp;ldquo;Sep 2020 - Aug 2022&amp;rdquo;&#xA;logo = &amp;ldquo;/images/company/logo.png&amp;rdquo;&#xA;description = &amp;ldquo;Brief description of your role and responsibilities.&amp;rdquo;&#xA;responsibilities = [&#xA;&amp;ldquo;Responsibility 1 with specific achievements&amp;rdquo;,&#xA;&amp;ldquo;Responsibility 2 with specific achievements&amp;rdquo;,&#xA;&amp;ldquo;Responsibility 3 with specific achievements&amp;rdquo;&#xA;]&lt;/p&gt;</description>
+      <description>&lt;h2 id=&#34;my-experience-at-ibm&#34;&gt;My Experience at IBM&lt;/h2&gt;&#xA;&lt;p&gt;I worked as a Security Analyst at IBM from September 2020 to August 2022. During this time, I focused on [describe your role in more detail].&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
