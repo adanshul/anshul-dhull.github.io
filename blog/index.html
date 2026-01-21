@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Blog posts by Anshul Dhull on cybersecurity, threat modeling, and security automation.">
+    <title>Blog | Anshul Dhull</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="blog.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="nav" id="navbar">
+        <div class="nav__container">
+            <a href="../index.html" class="nav__logo">
+                <span class="nav__logo-bracket">[</span>
+                AD
+                <span class="nav__logo-bracket">]</span>
+            </a>
+
+            <ul class="nav__menu" id="nav-menu">
+                <li><a href="../index.html#about" class="nav__link">About</a></li>
+                <li><a href="../index.html#experience" class="nav__link">Experience</a></li>
+                <li><a href="../index.html#projects" class="nav__link">Projects</a></li>
+                <li><a href="index.html" class="nav__link nav__link--active">Blog</a></li>
+                <li><a href="../index.html#contact" class="nav__link">Contact</a></li>
+            </ul>
+
+            <div class="nav__actions">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark/light mode">
+                    <span class="theme-toggle__icon theme-toggle__icon--sun">☀</span>
+                    <span class="theme-toggle__icon theme-toggle__icon--moon">☾</span>
+                </button>
+
+                <button class="nav__hamburger" id="nav-toggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="blog-page">
+        <div class="container">
+            <!-- Blog Header -->
+            <header class="blog-header">
+                <h1 class="blog-header__title">Blog</h1>
+                <p class="blog-header__subtitle">
+                    Thoughts on cybersecurity, threat modeling, and everything in between.
+                </p>
+            </header>
+
+            <!-- Blog Posts Grid -->
+            <div class="blog-grid">
+
+                <!-- Blog Post 1 -->
+                <article class="blog-card card">
+                    <div class="blog-card__meta">
+                        <span class="blog-card__date">January 7, 2024</span>
+                        <span class="blog-card__category">Security</span>
+                    </div>
+                    <h2 class="blog-card__title">
+                        <a href="posts/sample-post.html">Getting Started with Threat Modeling</a>
+                    </h2>
+                    <p class="blog-card__excerpt">
+                        A practical guide to implementing STRIDE and DREAD frameworks in your security workflow. Learn
+                        how to identify threats before they become vulnerabilities.
+                    </p>
+                    <div class="blog-card__footer">
+                        <span class="blog-card__read-time">5 min read</span>
+                        <a href="posts/sample-post.html" class="blog-card__link">
+                            Read Article <span class="arrow">→</span>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Blog Post 2 -->
+                <article class="blog-card card">
+                    <div class="blog-card__meta">
+                        <span class="blog-card__date">Coming Soon</span>
+                        <span class="blog-card__category">Automation</span>
+                    </div>
+                    <h2 class="blog-card__title">
+                        <a href="#">Automating Security with Python</a>
+                    </h2>
+                    <p class="blog-card__excerpt">
+                        How I built automation scripts that reduced vulnerability triage time by 35%. A deep dive into
+                        Python-based security automation.
+                    </p>
+                    <div class="blog-card__footer">
+                        <span class="blog-card__read-time">8 min read</span>
+                        <a href="#" class="blog-card__link">
+                            Coming Soon <span class="arrow">→</span>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Blog Post 3 -->
+                <article class="blog-card card">
+                    <div class="blog-card__meta">
+                        <span class="blog-card__date">Coming Soon</span>
+                        <span class="blog-card__category">Cloud</span>
+                    </div>
+                    <h2 class="blog-card__title">
+                        <a href="#">Securing Your AWS Infrastructure</a>
+                    </h2>
+                    <p class="blog-card__excerpt">
+                        Best practices for implementing security controls in AWS. From IAM policies to VPC
+                        configurations, learn to build secure cloud architectures.
+                    </p>
+                    <div class="blog-card__footer">
+                        <span class="blog-card__read-time">10 min read</span>
+                        <a href="#" class="blog-card__link">
+                            Coming Soon <span class="arrow">→</span>
+                        </a>
+                    </div>
+                </article>
+
+            </div>
+
+            <!-- Back to Home -->
+            <div class="blog-back">
+                <a href="../index.html" class="btn btn--secondary">← Back to Home</a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p class="footer__text">
+                Designed & Built by <span class="highlight">Anshul Dhull</span>
+            </p>
+            <p class="footer__copyright">© 2024 All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+
+</html>

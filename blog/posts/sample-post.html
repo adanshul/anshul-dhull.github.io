@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="A practical guide to implementing STRIDE and DREAD frameworks in your security workflow.">
+    <meta name="author" content="Anshul Dhull">
+    <title>Getting Started with Threat Modeling | Anshul Dhull</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="../../styles.css">
+    <link rel="stylesheet" href="../blog.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="nav" id="navbar">
+        <div class="nav__container">
+            <a href="../../index.html" class="nav__logo">
+                <span class="nav__logo-bracket">[</span>
+                AD
+                <span class="nav__logo-bracket">]</span>
+            </a>
+
+            <ul class="nav__menu" id="nav-menu">
+                <li><a href="../../index.html#about" class="nav__link">About</a></li>
+                <li><a href="../../index.html#experience" class="nav__link">Experience</a></li>
+                <li><a href="../../index.html#projects" class="nav__link">Projects</a></li>
+                <li><a href="../index.html" class="nav__link nav__link--active">Blog</a></li>
+                <li><a href="../../index.html#contact" class="nav__link">Contact</a></li>
+            </ul>
+
+            <div class="nav__actions">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark/light mode">
+                    <span class="theme-toggle__icon theme-toggle__icon--sun">☀</span>
+                    <span class="theme-toggle__icon theme-toggle__icon--moon">☾</span>
+                </button>
+
+                <button class="nav__hamburger" id="nav-toggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <article class="blog-post">
+        <div class="container">
+            <!-- Post Header -->
+            <header class="blog-post__header">
+                <span class="blog-post__category">Security</span>
+                <h1 class="blog-post__title">Getting Started with Threat Modeling</h1>
+                <div class="blog-post__meta">
+                    <span>January 7, 2024</span>
+                    <span>•</span>
+                    <span>5 min read</span>
+                    <span>•</span>
+                    <span>By Anshul Dhull</span>
+                </div>
+            </header>
+
+            <!-- Post Content -->
+            <div class="blog-post__content">
+                <p>
+                    Threat modeling is one of the most effective proactive security measures you can implement in your
+                    development lifecycle. It's about thinking like an attacker before they do—identifying potential
+                    threats, vulnerabilities, and attack vectors in your systems.
+                </p>
+
+                <h2>What is Threat Modeling?</h2>
+                <p>
+                    Threat modeling is a structured approach to identifying and addressing potential security threats.
+                    It involves:
+                </p>
+                <ul>
+                    <li>Understanding your system's architecture</li>
+                    <li>Identifying potential threats and attack vectors</li>
+                    <li>Prioritizing risks based on impact and likelihood</li>
+                    <li>Implementing appropriate mitigations</li>
+                </ul>
+
+                <blockquote>
+                    "Threat modeling is the process of using hypothetical scenarios, system diagrams, and testing to
+                    help secure systems and data."
+                </blockquote>
+
+                <h2>The STRIDE Framework</h2>
+                <p>
+                    Developed by Microsoft, STRIDE is a mnemonic for six categories of security threats:
+                </p>
+
+                <h3>S - Spoofing</h3>
+                <p>
+                    Pretending to be something or someone you're not. This includes stealing credentials, session
+                    hijacking, or impersonating services.
+                </p>
+
+                <h3>T - Tampering</h3>
+                <p>
+                    Modifying data or code maliciously. Examples include SQL injection, man-in-the-middle attacks, and
+                    unauthorized data modification.
+                </p>
+
+                <h3>R - Repudiation</h3>
+                <p>
+                    Claiming you didn't do something when you actually did. This is why proper logging and audit trails
+                    are essential.
+                </p>
+
+                <h3>I - Information Disclosure</h3>
+                <p>
+                    Exposing information to unauthorized parties. This includes data breaches, verbose error messages,
+                    and insecure data storage.
+                </p>
+
+                <h3>D - Denial of Service</h3>
+                <p>
+                    Making a system unavailable. Think DDoS attacks, resource exhaustion, or crashing services through
+                    malformed inputs.
+                </p>
+
+                <h3>E - Elevation of Privilege</h3>
+                <p>
+                    Gaining capabilities without proper authorization. This includes privilege escalation attacks and
+                    broken access control.
+                </p>
+
+                <div class="callout callout--info">
+                    <p class="callout__title">💡 Pro Tip</p>
+                    <p>When analyzing a system, map each component and data flow to STRIDE categories. Ask yourself:
+                        "How could an attacker spoof, tamper, repudiate, disclose, deny service, or escalate privileges
+                        here?"</p>
+                </div>
+
+                <h2>The DREAD Framework</h2>
+                <p>
+                    DREAD is a risk rating framework to help prioritize threats. Each factor is rated on a scale of
+                    1-10:
+                </p>
+
+                <pre><code>Risk Rating = (D + R + E + A + D) / 5
+
+Where:
+D = Damage Potential    (How bad would an attack be?)
+R = Reproducibility     (How easy is it to reproduce?)
+E = Exploitability      (How easy is it to launch?)
+A = Affected Users      (How many users impacted?)
+D = Discoverability     (How easy to discover?)</code></pre>
+
+                <h2>Practical Steps to Start</h2>
+                <ol>
+                    <li><strong>Draw your architecture</strong> - Create data flow diagrams showing components, trust
+                        boundaries, and data flows</li>
+                    <li><strong>Identify threats</strong> - Use STRIDE on each component</li>
+                    <li><strong>Rate risks</strong> - Apply DREAD to prioritize</li>
+                    <li><strong>Plan mitigations</strong> - Address high-priority threats first</li>
+                    <li><strong>Document everything</strong> - Keep your threat model updated</li>
+                </ol>
+
+                <h2>Conclusion</h2>
+                <p>
+                    Threat modeling isn't a one-time activity—it's an ongoing practice. As your system evolves, so do
+                    the threats. Make threat modeling part of your development lifecycle, and you'll catch
+                    vulnerabilities before they become breaches.
+                </p>
+                <p>
+                    In upcoming posts, I'll dive deeper into specific threat modeling techniques and share real-world
+                    examples from my experience at IBM and SEIA.
+                </p>
+            </div>
+
+            <!-- Post Navigation -->
+            <nav class="blog-post__nav">
+                <a href="../index.html" class="blog-post__nav-link">
+                    ← Back to Blog
+                </a>
+                <a href="#" class="blog-post__nav-link">
+                    Next Article →
+                </a>
+            </nav>
+        </div>
+    </article>
+
+    <footer class="footer">
+        <div class="container">
+            <p class="footer__text">
+                Designed & Built by <span class="highlight">Anshul Dhull</span>
+            </p>
+            <p class="footer__copyright">© 2024 All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../../script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ========== EDIT THESE FOR EACH POST ========== -->
+    <meta name="description" content="YOUR POST DESCRIPTION HERE">
+    <meta name="author" content="Anshul Dhull">
+    <title>YOUR POST TITLE | Anshul Dhull</title>
+    <!-- ============================================== -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="../../styles.css">
+    <link rel="stylesheet" href="../blog.css">
+</head>
+
+<body>
+    <!-- Navigation (keep as-is) -->
+    <nav class="nav" id="navbar">
+        <div class="nav__container">
+            <a href="../../index.html" class="nav__logo">
+                <span class="nav__logo-bracket">[</span>
+                AD
+                <span class="nav__logo-bracket">]</span>
+            </a>
+
+            <ul class="nav__menu" id="nav-menu">
+                <li><a href="../../index.html#about" class="nav__link">About</a></li>
+                <li><a href="../../index.html#experience" class="nav__link">Experience</a></li>
+                <li><a href="../../index.html#projects" class="nav__link">Projects</a></li>
+                <li><a href="../index.html" class="nav__link nav__link--active">Blog</a></li>
+                <li><a href="../../index.html#contact" class="nav__link">Contact</a></li>
+            </ul>
+
+            <div class="nav__actions">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark/light mode">
+                    <span class="theme-toggle__icon theme-toggle__icon--sun">☀</span>
+                    <span class="theme-toggle__icon theme-toggle__icon--moon">☾</span>
+                </button>
+
+                <button class="nav__hamburger" id="nav-toggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <article class="blog-post">
+        <div class="container">
+            <!-- ========== EDIT POST HEADER ========== -->
+            <header class="blog-post__header">
+                <span class="blog-post__category">CATEGORY</span>
+                <h1 class="blog-post__title">Your Post Title Here</h1>
+                <div class="blog-post__meta">
+                    <span>Month Day, Year</span>
+                    <span>•</span>
+                    <span>X min read</span>
+                    <span>•</span>
+                    <span>By Anshul Dhull</span>
+                </div>
+            </header>
+            <!-- ====================================== -->
+
+            <!-- ========== PASTE YOUR CONTENT HERE ========== -->
+            <div class="blog-post__content">
+
+                <p>
+                    Your introduction paragraph goes here. This is where you hook the reader
+                    and explain what the article is about.
+                </p>
+
+                <h2>Section Heading</h2>
+                <p>
+                    Your content here. Use <code>inline code</code> for technical terms.
+                </p>
+
+                <h3>Subsection Heading</h3>
+                <p>
+                    More detailed content under this subsection.
+                </p>
+
+                <!-- Bullet List -->
+                <ul>
+                    <li>First point</li>
+                    <li>Second point</li>
+                    <li>Third point</li>
+                </ul>
+
+                <!-- Numbered List -->
+                <ol>
+                    <li>Step one</li>
+                    <li>Step two</li>
+                    <li>Step three</li>
+                </ol>
+
+                <!-- Quote -->
+                <blockquote>
+                    This is a blockquote for important quotes or callouts.
+                </blockquote>
+
+                <!-- Code Block -->
+                <pre><code>def example_function():
+    print("Your code goes here")
+    return True</code></pre>
+
+                <!-- Info Callout -->
+                <div class="callout callout--info">
+                    <p class="callout__title">💡 Pro Tip</p>
+                    <p>This is an info callout for tips and helpful information.</p>
+                </div>
+
+                <!-- Warning Callout -->
+                <div class="callout callout--warning">
+                    <p class="callout__title">⚠️ Warning</p>
+                    <p>This is a warning callout for important cautions.</p>
+                </div>
+
+                <!-- Success Callout -->
+                <div class="callout callout--success">
+                    <p class="callout__title">✓ Success</p>
+                    <p>This is a success callout for positive outcomes.</p>
+                </div>
+
+                <h2>Conclusion</h2>
+                <p>
+                    Your closing thoughts and summary go here.
+                </p>
+
+            </div>
+            <!-- ============================================= -->
+
+            <!-- Post Navigation (keep as-is) -->
+            <nav class="blog-post__nav">
+                <a href="../index.html" class="blog-post__nav-link">
+                    ← Back to Blog
+                </a>
+                <a href="#" class="blog-post__nav-link">
+                    Next Article →
+                </a>
+            </nav>
+        </div>
+    </article>
+
+    <footer class="footer">
+        <div class="container">
+            <p class="footer__text">
+                Designed & Built by <span class="highlight">Anshul Dhull</span>
+            </p>
+            <p class="footer__copyright">© 2024 All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../../script.js"></script>
+</body>
+
+</html>
